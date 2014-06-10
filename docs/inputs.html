@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="../pictures/favicon.png">
+
+    <title>RoboArmadillo</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../bootstrap.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="../page1.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy this line! -->
+    <!--[if lt IE 9]><script src="{{ page.base_url }}docs-assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+     <div class="container">
+
+      <div class="masthead">
+        <img src="../pictures/logo.png" alt="Look at the shiny logo!"></p>
+        <ul class="nav nav-justified">
+          <li><a href="../index.html">Home</a></li>
+          <li class="active" ><a href="../documentation.html">Documentation</a></li>
+          <li><a href="../download.html">Download and Setup</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <p></p>
+
+      <div class ="secondnav">
+        <ul class="nav nav-justified">
+          <li><a href="motors.html">Motors</a></li>
+          <li class="active" ><a href="inputs.html">Inputs</a></li>
+          <li><a href="outputs.html">Outputs</a></li>
+          <li><a href="vision.html">Vision</a></li>
+          <li><a href="servos.html">Servos</a></li>
+          <li><a href="useful.html">Useful Extras</a></li>
+
+        </ul>
+      </div>
+
+       <div>
+        <h1 style="color: #D9892e">Inputs</h1>
+        <p>You have 16 analogue and 16 digital inputs at your disposal. They are contained in a list called "inputs" (In exactly the same way as the motors). Now it gets slightly complicated. Each element of the list has TWO properties. One is called "a" and the other is "d" where "a" stands for analogue and "d" for digital. If I read the value of "a" property of element 2 in the list "inputs" (R.inputs[1].a) this will give me a voltage between 0-5V as a float (a number with decimal point in it) reading from pin A1 (the 2nd analogue pin). BUT if I were to read from R.inputs[1].d it would give return a "Boolean"(True or False) from pin 31 (the 2nd digital pin-for more details on which pins are which please see the Arduino Mega diagram on the <a href="useful.html" style="color: #D9892e">Useful Extras</a> page .)</p>
+        <h3 style="color: #D9892e">Read Digital Inputs Example</h3>
+        <p></p>
+        <code>
+        <p>bump_switch = R.inputs[0].d</p>
+        <p>print bump_switch</p>
+        <p>>>True</p> 
+        </code>
+        <p>This sets the variable bump_switch to equal digital input 0, and then returns True or False.</p>
+        <p></p>
+        <h3 style="color: #D9892e">Read Analog Input Example</h3>
+        <code>
+        <p>light_sensor = R.inputs[0].a</p>
+        <p>print lightsensor</p>
+        </code>
+        <p>This would then return a float from 0.00-5.00</p>
+        <h4 style="color: #D9892e">Warning</h4>
+        <p>When plugging in your sensors, as said before R.input[0].a is not the same pin as R.input[0].d</p>
+
+
+
+
+      </div>
+
+
+
+      <!-- Site footer -->
+      <div class="footer">
+        <p>&copy; Adam Ferguson 2014</p>
+      </div>
+
+    </div> <!-- /container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+  </body>
+</html>
