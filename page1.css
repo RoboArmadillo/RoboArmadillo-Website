@@ -1,0 +1,118 @@
+body {
+  padding-top: 20px;
+  background-color: #231f20;
+  color:#eee;
+}
+
+code{
+background-color: #231f20;
+font-size: 15px;
+color:#D9892e;
+
+}
+
+.tab {
+  padding-left: 40px;
+}
+
+.footer {
+  border-top: 1px solid #eee;
+  margin-top: 40px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+/* Main marketing message and sign up button */
+.jumbotron {
+  text-align: center;
+  background-color: transparent;
+}
+.jumbotron .btn {
+  font-size: 21px;
+  padding: 14px 24px;
+  background-color: #D9892e;
+  border: 1px solid #ccc
+
+}
+
+.btn{
+  background-color: #D9892e;
+  border: 1px solid #ccc
+}
+
+/* Customize the nav-justified links to be fill the entire space of the .navbar */
+
+.nav-justified {
+  background-color:#d9892e;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  color: #231f20;
+}
+.nav-justified > li > a {
+  margin-bottom: 0;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  color: #d9892e;
+  font-weight: bold;
+  text-align: center;
+  border-bottom: 1px solid #d5d5d5;
+  background-color: #231f20; /* Old browsers */
+
+
+
+.organiser-grid{
+  background-color:#d9892e;
+
+}
+  
+  
+}
+.nav-justified > .active > a,
+.nav-justified > .active > a:hover{
+  background-color: #d9892e;
+  background-image: none;
+  box-shadow: inset 0 3px 7px rgba(0,0,0,.15);
+  color:#eee;
+}
+.nav-justified > .active > a:focus {
+  background-color: #d9892e;
+  background-image: none;
+  box-shadow: inset 0 3px 7px rgba(0,0,0,.15);
+  color:#231f20;
+}
+.nav-justified > li:first-child > a {
+  border-radius: 5px 5px 0 0;
+}
+.nav-justified > li:last-child > a {
+  border-bottom: 0;
+  border-radius: 0 0 5px 5px;
+}
+
+@media (min-width: 768px) {
+  .nav-justified {
+    max-height: 52px;
+  }
+  .nav-justified > li > a {
+    border-left: 1px solid #fff;
+    border-right: 1px solid #d5d5d5;
+  }
+  .nav-justified > li:first-child > a {
+    border-left: 0;
+    border-radius: 5px 0 0 5px;
+  }
+  .nav-justified > li:last-child > a {
+    border-radius: 0 5px 5px 0;
+    border-right: 0;
+  }
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+  /* Remove the padding we set earlier */
+  .masthead,
+  .marketing,
+  .footer {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
