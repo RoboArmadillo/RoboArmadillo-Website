@@ -34,8 +34,7 @@
         <a href="../index.html"><img src="../pictures/logo.png" alt="Look at the shiny logo!"></p></a>
         <ul class="nav nav-justified">
           <li><a href="../index.html">Home</a></li>
-          <li class="active" ><a href="../documentation.html">Documentation</a></li>
-          <li><a href="../download.html">Download and Setup</a></li>
+          <li class ="../active"><a href="../projects.html">Projects</a></li>
           <li><a href="../about.html">About</a></li>
           <li><a href="../contact.html">Contact</a></li>
         </ul>
@@ -60,7 +59,7 @@
 
         <h3 style="color: #D9892e"> Distance orderer</h3>
         <p><code>def distance_orderer(listname): #where listname is the list of markers to be ordered</code></p>
-        <p><code class ="tab">listname=sorted(listname, key=lambda Marker:Marker.dist)</code></p>
+        <p><code class ="tab">listname=sorted(listname, key=lambda Marker:Marker.distance)</code></p>
         <p><code class = "tab">return listname</code></p>
         <p>You would use this in the following way:</p>
         <p><code>markers = R.see((1080,1024),True,1)</code></p>
