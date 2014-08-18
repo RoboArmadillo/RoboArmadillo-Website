@@ -4,16 +4,35 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <title><%= title %></title>
-  <link rel="stylesheet" href="/public/styles/css/styles.css">
+  <link rel="stylesheet" href="/styles/css/styles.css">
+  <script src="javascripts/vendor/jquery/dist/jquery.min.js"></script>
 </head>
 <body>
 
 <div role="main">
-	
+
 <header>
-  <div class="container">
-    <h1><a href="/"><%= title %></a></h1>
-  </div>
+<div class="contain">
+   <div class="left">
+    <a href=""><img src="images/logo.png" alt="RoboArmadillo"></p></a>
+   </div>
+   <div class="right">
+   	<nav class="menu">
+		<ul class="main-menu">
+		  <li><a href="/">Home</a></li>
+		    <li><a href="/projects">Projects</a>
+		      <ul>
+		          <li><a href="/ropipykokiduino">RoPiPyKokiDuino</a></li>
+		          <li><a href="/roboswarm">RoboSwarm</a></li>
+		          <li><a href="/robohex">RoboHex</a></li>
+		        </ul>
+		    </li>
+		    <li><a href="/about">About</a></li>
+		    <li><a href="/contact">Contact</a></li>
+		</ul>
+	</nav>
+	</div>
+</div>
 </header>
 
 <!-- Page Content Below -->

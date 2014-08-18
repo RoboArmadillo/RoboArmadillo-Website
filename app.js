@@ -11,6 +11,10 @@ var routes = require('./routes/routes');
 //Init
 var app = module.exports = express();
 
+var settings = {
+	title: "RoboArmadillo"
+}
+
 //App Configuration
 
 app.set('views', __dirname + '/views');
@@ -19,8 +23,11 @@ app.use(bodyParser());
 app.use(methodOverride());
 app.use(express.static(__dirname + '/public'));
 
+app.get('/', function(req, res){
+	res.render('index', {title: "RoboArmadillo"});
+});
 
-app.get('/', routes.index);
+app.get('/:page', routes.page);
 
 
 
