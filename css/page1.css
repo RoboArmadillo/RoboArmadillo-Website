@@ -120,3 +120,53 @@ color:#D9892e;
     padding-right: 0;
   }
 }
+
+/*style the main menu*/
+.myMenu {
+  margin:0 auto;
+  padding:0;
+}
+
+.myMenu li {
+  list-style:none;
+  float:left;
+  font:12px Arial, Helvetica, sans-serif #;
+}
+
+.myMenu li a:link, .myMenu li a:visited {
+  display:block;
+  text-decoration:none;
+  background-color:#231f20;
+  padding: 0.9em 6em;
+  margin:0;
+  border-right: 2px solid #D9892e;
+  color:#ffffff;
+}
+
+.myMenu li a:hover {
+  background-color:#D9892e;  
+}
+
+/*style the sub menu*/
+.myMenu li ul {
+  position:absolute;
+  visibility:hidden;
+  margin:0;
+  padding: 0em;
+  background-color: #ffffff;
+}
+
+
+.myMenu li ul li {
+  display:inline;
+  float:none;
+}
+
+.myMenu li ul li a:link, .myMenu li ul li a:visited {
+  background-color:#231f20;
+  width:auto;
+}
+
+.myMenu li ul li a:hover {
+ background-color: #D9892e; 
+}
